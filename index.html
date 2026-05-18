@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edgar Pérez - Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/foto carnet.jpg"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/foto carnet.jpg" alt="Edgar Pérez" width="70" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Edgar Perez">Edgar Pérez</h1>
+
+            <p class="title">Desarrollador Front-End</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:pp.compured@gmail.com" class="contact-link">pp.compured@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Telefono</p>
+
+                <a href="tel:+56986144545" class="contact-link"
+                  >+56 986144545</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Ubicación</p>
+
+                <address>Talca, Maule, Chile</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/edgarperez2"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/edgarperez2?tab=repositories"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-Facebook"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--- #main-content -->
+
+      <div class="main-content">
+        <!--- #NAVBAR -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Acerca de mi</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resumen</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portafolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contactame</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--- #ABOUT -->
+
+        <article class="about active" data-page="acerca de mi">
+          <header>
+            <h2 class="h2 article-title">Acerca de mi</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Soy Edgar Pérez, desarrollador Front-End con base en Talca, Chile.
+              Construyo interfaces web modernas con HTML, CSS, JavaScript y Vue,
+              con proyectos publicados en GitHub Pages y experiencia trabajando
+              con Next.js.
+            </p>
+
+            <p>
+              Mi diferencial es que vengo de 15 años liderando infraestructura
+              TI en la industria de construcción e ingeniería — entiendo cómo
+              funciona un sistema completo, no solo la UI. Eso me permite
+              trabajar con criterio técnico, comunicarme con equipos de backend
+              y tomar decisiones que van más allá del píxel.
+            </p>
+
+            <p>
+              Complemento mi perfil con fundamentos en hacking ético, pentesting
+              e inteligencia artificial — tres áreas que integro al desarrollo
+              para construir aplicaciones más seguras, inteligentes y difíciles
+              de comprometer.
+            </p>
+          </section>
+
+          <!--- service -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Que es lo que hago</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="dev icon"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desarrollador Front-End</h4>
+
+                  <p class="service-item-text">
+                    Transformo ideas en experiencias digitales modernas,
+                    interactivas y optimizadas.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/AI.png" alt="AI icon" width="50" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Artificial Intelligence Fundamentals
+                  </h4>
+
+                  <p class="service-item-text">
+                    Poseo fundamentos en IA, con conocimientos en aprendizaje
+                    automático y mejoras de entornos digitales.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ciber2.png"
+                    alt="ciber icon"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Fundamentos en Ciberseguridad
+                  </h4>
+
+                  <p class="service-item-text">
+                    🔐 Construyo entornos digitales seguros, protegiendo datos y
+                    sistemas frente a amenazas.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/hacker-etico.png"
+                    alt="hacker icon"
+                    width="50"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Hacker Etico</h4>
+
+                  <p class="service-item-text">
+                    Realizo auditorías de seguridad y pruebas de penetración para
+                    identificar vulnerabilidades en sistemas y redes.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--- testimonials -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonios</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Mauricio Moreno</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Edgar diseñó y desarrolló el sitio web de nuestra organización de manera muy profesional.
+                      Entendió perfectamente lo que necesitábamos: una página clara y que transmitiera confianza
+                      para recibir donaciones. El resultado superó nuestras expectativas y el proceso fue muy fluido.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Riolama Merling</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Trabajar con Edgar fue una experiencia excelente. Desarrolló nuestra presencia web
+                      desde cero con un diseño limpio y profesional que representa muy bien a nuestra empresa.
+                      Muy atento a los detalles y siempre dispuesto a incorporar los cambios que solicitamos.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Douglas Pérez</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Edgar desarrolló la plataforma web de nuestra empresa de extintores y quedamos muy conformes.
+                      El sistema es intuitivo, bien organizado y nos facilita enormemente la gestión del negocio.
+                      Destaco su capacidad técnica y la dedicación que puso en cada detalle del proyecto.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+          <!--- testimonials modal -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Edgar was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--- tecnologias -->
+
+          <section class="tecnologias">
+            <h3 class="h3 tecnologias-title">Tecnologías</h3>
+
+            <ul class="tecnologias-list has-scrollbar">
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/html.png" alt="html logo" />
+              </li>
+
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/css.png" alt="css logo" />
+              </li>
+
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/js.png" alt="JS logo"/>
+              </li>
+
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/github2.png" alt="github logo" />
+              </li>
+
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/piton.png" alt="piton logo" />
+              </li>
+
+              <li class="tecnologias-item">
+                  <img src="./assets/images/tec/vue.png" alt="vue logo" />
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--- #RESUMEN -->
+
+        <article class="resumen" data-page="resumen">
+          <header>
+            <h2 class="h2 article-title">Resumen</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Educación</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Academia Hacker Mentor</h4>
+
+                <span>2025 — 2026</span>
+
+                <p class="timeline-text">Pentester Mentor Junior - Certiprof</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Academia Desafio Latam - Talento Digital</h4>
+
+                <span>2024 — 2025</span>
+
+                <p class="timeline-text">Fundamentos de Seguridad en Plataformas Computacionales</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Academia Desafio Latam - Talento Digital</h4>
+
+                <span>2023 — 2024</span>
+
+                <p class="timeline-text">Desarrollador Web Front-End.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">CVOSOFT</h4>
+
+                <span>2023 — 2024</span>
+
+                <p class="timeline-text">
+                  Egresado como Consultor Funcional Modulo MM SAP y consultor
+                  SAP ABAP.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Instituto Universitario de Tecnología Antonio José de Sucre
+                </h4>
+
+                <span>1999 — 2002</span>
+
+                <p class="timeline-text">
+                  Graduado de Técnico Superior Universitario en Informática.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experiencia</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Desarrollador Front-End Freelance</h4>
+
+                <span>Present</span>
+
+                <p class="timeline-text">
+                  Diseño y desarrollo de sitios web responsivos utilizando HTML5, CSS3, 
+                  JavaScript y WordPress, garantizando compatibilidad con múltiples dispositivos 
+                  y navegadores. Gestión integral de proyectos: análisis, diseño, desarrollo, pruebas y entrega final.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Fundamentos de Inteligencia Artificial</h4>
+
+                <span>2025</span>
+
+                <p class="timeline-text">
+                  Certificación que abarca conceptos de machine learning, procesamiento de lenguaje 
+                  natural, modelos de IA aplicada y ética en la inteligencia artificial, 
+                  con foco en aplicaciones prácticas en negocios y tecnología.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Coordinador de Soporte TI</h4>
+
+                <span>2003 - 2010</span>
+
+                <p class="timeline-text">
+                  Administración de redes corporativas y sistemas de control de acceso, 
+                  Soporte e instalación de hardware (PC, laptops, impresoras), 
+                  Implementación y gestión de SAP y Autodesk en proyectos industriales, 
+                  Liderazgo de equipos de campo petrolero, garantizando cumplimiento de tiempos y presupuestos.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Mis Habilidades</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Desarrollador Web Vue</h5>
+                  <data value="80">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="70">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS y Javascript</h5>
+                  <data value="90">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--- #PORTAFOLIO -->
+
+        <article class="portafolio" data-page="portafolio">
+          <header>
+            <h2 class="h2 article-title">Portafolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://edgarperez2.github.io/Pagina-de-Bomberos/" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/captura1.png" alt="ONG Bomberos" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">ONG Bomberos</h3>
+
+                  <p class="project-category">Web development</p>
+
+                  <p class="project-description">Sitio web para organización de bomberos voluntarios, orientado a recibir donaciones.</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/edgarperez2/imextec-web" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-2.png" alt="Imextec Web" loading="lazy"/>
+                  </figure>
+
+                  <h3 class="project-title">Imextec Web</h3>
+
+                  <p class="project-category">Web development</p>
+
+                  <p class="project-description">Presencia web corporativa para empresa del rubro industrial con diseño limpio y profesional.</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="applications">
+                <a href="https://github.com/edgarperez2/extintor-pro" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-4.png" alt="Extintor Pro" loading="lazy"/>
+                  </figure>
+
+                  <h3 class="project-title">Extintor Pro</h3>
+
+                  <p class="project-category">Web development</p>
+
+                  <p class="project-description">Plataforma de gestión para empresa de extintores, desarrollada con Next.js.</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web design">
+                <a href="https://edgarperez2.github.io/viajes-chile.github.io/" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-5.png" alt="Viajes Chile" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Viajes Chile</h3>
+
+                  <p class="project-category">Web design</p>
+
+                  <p class="project-description">Landing page turística con diseño visual atractivo y totalmente responsive.</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://edgarperez2.github.io/iguana.github.io/" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-7.png" alt="Iguana Page" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Iguana Page</h3>
+
+                  <p class="project-category">Web development</p>
+
+                  <p class="project-description">Página web temática desarrollada como desafío de maquetación HTML y CSS.</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web design">
+                <a href="https://edgarperez2.github.io/Oliviaros.github.io/" target="_blank" rel="noopener noreferrer">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-8.png" alt="Oliviaros" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Oliviaros</h3>
+
+                  <p class="project-category">Web design</p>
+
+                  <p class="project-description">Sitio web personal con diseño limpio, moderno y navegación intuitiva.</p>
+                </a>
+              </li>
+
+            </ul>
+          </section>
+        </article>
+
+        <!--- #CONTACTAME -->
+
+        <article class="contactame" data-page="contactame">
+          <header>
+            <h2 class="h2 article-title">Contactame</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52019.35158479372!2d-71.66089725393046!3d-35.424840606052086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1736307472269!5m2!1ses-419!2scl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contactame</h3>
+
+            <form
+              action="https://getform.io/f/aejjxgjb"
+              class="form"
+              method="post"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Nombre completo"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Dirección de correo"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Tu mensaje"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Enviar Mensaje</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
